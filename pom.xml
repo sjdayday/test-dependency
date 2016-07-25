@@ -2,14 +2,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>test</groupId>
   <artifactId>test-dependency</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.3-SNAPSHOT</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <github.global.server>github</github.global.server>
     </properties>
     <scm>
         <developerConnection>scm:git:git@github.com:sjdayday/test-dependency.git</developerConnection>
-        <tag>test-dependency-0.0.2</tag>
+        <tag>HEAD</tag>
     </scm>
 <!--    <repositories>
         <repository>
