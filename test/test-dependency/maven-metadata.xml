@@ -4,8 +4,8 @@
   <artifactId>test-dependency</artifactId>
   <versioning>
     <versions>
-      <version>0.0.3-SNAPSHOT</version>
+      <version>0.0.4-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20160725225135</lastUpdated>
+    <lastUpdated>20160725231552</lastUpdated>
   </versioning>
 </metadata>
