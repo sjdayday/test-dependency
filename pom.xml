@@ -104,7 +104,7 @@
                     <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
                     <branch>refs/heads/mvn-repo</branch>
                     <includes><include>**/*</include></includes>
-                    <repositoryName>PIPECore</repositoryName>
+                    <repositoryName>test-dependency</repositoryName>
                     <repositoryOwner>sjdayday</repositoryOwner>   <!-- for 1.0.2-SNAPSHOT, was: sarahtattersall -->
                     <merge>true</merge>
                 </configuration>
