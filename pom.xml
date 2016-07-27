@@ -8,9 +8,13 @@
         <github.global.server>github</github.global.server>
     </properties>
     <scm>
-        <developerConnection>scm:git:git@github.com:sjdayday/test-dependency.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:${gitUser}/test-dependency.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
+<!-- 
+       <developerConnection>scm:git:git@github.com:sjdayday/test-dependency.git</developerConnection>
+
+ -->  
 <!--    <repositories>
         <repository>
             <id>PIPEMarkovChain-mvn-repo</id>
