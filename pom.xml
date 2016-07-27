@@ -8,24 +8,14 @@
         <github.global.server>github</github.global.server>
     </properties>
     <scm>
-        <developerConnection>scm:git:git@github.com:${gitUser}/test-dependency.git</developerConnection>
+    	<!-- 
+    	   Used by maven release plugin.  Add -DgithubUser=yourGithubUserId to 
+    	   maven release commands, e.g., 
+    	   -DgithubUser=sjdayday release:prepare (or release:perform) 
+    	 -->
+        <developerConnection>scm:git:git@github.com:${githubUser}/test-dependency.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
-<!-- 
-       <developerConnection>scm:git:git@github.com:sjdayday/test-dependency.git</developerConnection>
-
- -->  
-<!--    <repositories>
-        <repository>
-            <id>PIPEMarkovChain-mvn-repo</id>
-            <url>https://raw.github.com/sarahtattersall/PIPEMarkovChain/mvn-repo/</url>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </snapshots>
-        </repository>
-    </repositories>
- -->
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -99,6 +89,11 @@
             </plugin>
 
             <plugin>
+       	    	<!-- 
+		    	   Used by maven release plugin, and as part of deploy phase.  
+		    	   Add -DgithubUser=yourGithubUserId to maven commands, e.g., 
+			    	   -DgithubUser=sjdayday release:prepare (or release:perform, or deploy) 
+	        	 -->
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
                 <version>0.11</version>
@@ -109,7 +104,7 @@
                     <branch>refs/heads/mvn-repo</branch>
                     <includes><include>**/*</include></includes>
                     <repositoryName>test-dependency</repositoryName>
-                    <repositoryOwner>sjdayday</repositoryOwner>   <!-- for 1.0.2-SNAPSHOT, was: sarahtattersall -->
+                    <repositoryOwner>${githubUser}</repositoryOwner>   
                     <merge>true</merge>
                 </configuration>
                 <executions>
