@@ -3,10 +3,9 @@
   <groupId>test</groupId>
   <artifactId>test-dependency</artifactId>
   <versioning>
-    <release>0.0.12</release>
     <versions>
-      <version>0.0.12</version>
+      <version>0.0.13-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20160728002529</lastUpdated>
+    <lastUpdated>20160728185414</lastUpdated>
   </versioning>
 </metadata>
