@@ -104,8 +104,8 @@
                     <branch>refs/heads/mvn-repo</branch>
                     <includes><include>**/*</include></includes>
                     <repositoryName>test-dependency</repositoryName>
-<!--                     <repositoryOwner>${githubUser}</repositoryOwner>   
- -->                    <merge>true</merge>
+                     <repositoryOwner>sjdayday</repositoryOwner>   
+                    <merge>true</merge>
                 </configuration>
                 <executions>
                     <!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
