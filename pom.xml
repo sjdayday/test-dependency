@@ -9,11 +9,11 @@
     </properties>
     <scm>
     	<!-- 
-    	   Used by maven release plugin.  Add -DgithubUser=yourGithubUserId to 
+    	   Used by maven release plugin.  Add -Dgithub.site.repositoryOwner=yourGithubUserId to 
     	   maven release commands, e.g., 
-    	   -DgithubUser=sjdayday release:prepare (or release:perform) 
+    	   -Dgithub.site.repositoryOwner=sjdayday release:prepare (or release:perform) 
     	 -->
-        <developerConnection>scm:git:git@github.com:${githubUser}/test-dependency.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:${github.site.repositoryOwner}/test-dependency.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
     <dependencies>
@@ -91,12 +91,12 @@
             <plugin>
        	    	<!-- 
 		    	   Used by maven release plugin, and as part of deploy phase.  
-		    	   Add -DgithubUser=yourGithubUserId to maven commands, e.g., 
-			    	   -DgithubUser=sjdayday release:prepare (or release:perform, or deploy) 
+		    	   Add -Dgithub.site.repositoryOwner=yourGithubUserId to maven commands, e.g., 
+			    	   -Dgithub.site.repositoryOwner=sjdayday release:prepare (or release:perform, or deploy) 
 	        	 -->
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
-                <version>0.11</version>
+                <version>0.12</version>
                 <configuration>
                     <message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
                     <noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
