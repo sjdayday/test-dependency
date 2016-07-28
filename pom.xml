@@ -9,9 +9,10 @@
     </properties>
     <scm>
     	<!-- 
-    	   Used by maven release plugin.  Add -Dgithub.site.repositoryOwner=yourGithubUserId to 
-    	   maven release commands, e.g., 
-    	   -Dgithub.site.repositoryOwner=sjdayday release:prepare (or release:perform) 
+    	   Used by maven release plugin.  
+    	   Add -Darguments=-Dgithub.site.repositoryOwner=yourGithubUserId to 
+    	   maven release plugin commands, e.g., 
+    	   -Darguments=-Dgithub.site.repositoryOwner=sarahtattersall release:prepare (or release:perform) 
     	 -->
         <developerConnection>scm:git:git@github.com:${github.site.repositoryOwner}/test-dependency.git</developerConnection>
         <tag>HEAD</tag>
@@ -109,8 +110,11 @@
             <plugin>
        	    	<!-- 
 		    	   Used by maven release plugin, and as part of deploy phase.  
-		    	   Add -Dgithub.site.repositoryOwner=yourGithubUserId to maven commands, e.g., 
-			    	   -Dgithub.site.repositoryOwner=sjdayday release:prepare (or release:perform, or deploy) 
+		    	   For the release plugin, any command line arguments must be passed using -Darguments="args... "
+		    	   Add -Darguments=-Dgithub.site.repositoryOwner=yourGithubUserId to maven release commands, e.g., 
+			    	   -Darguments=-Dgithub.site.repositoryOwner=sarahtattersall release:prepare (or release:perform, or deploy)
+			       For the deploy phase, -Darguments is not needed:
+			       	   -Dgithub.site.repositoryOwner=sarahtattersall clean deploy  
 	        	 -->
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
