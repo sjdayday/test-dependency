@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>test</groupId>
   <artifactId>test-dependency</artifactId>
-  <version>0.0.12-SNAPSHOT</version>
+  <version>0.0.12</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <github.global.server>github</github.global.server>
@@ -14,7 +14,7 @@
     	   -Dgithub.site.repositoryOwner=sjdayday release:prepare (or release:perform) 
     	 -->
         <developerConnection>scm:git:git@github.com:${github.site.repositoryOwner}/test-dependency.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>test-dependency--0.0.12</tag>
     </scm>
     <dependencies>
         <dependency>
